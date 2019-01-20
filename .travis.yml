@@ -16,8 +16,8 @@ after_success:
   # Log into the docker hub CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --passwrod-stdin
   # Take those images and push them to the docker hub
-  - docker push psicorpgmbh/mutlti-client
-  - docker push psicorpgmbh/mutlti-nginx
-  - docker push psicorpgmbh/mutlti-server
-  - docker push psicorpgmbh/mutlti-worker
+  - docker push psicorpgmbh/multi-client
+  - docker push psicorpgmbh/multi-nginx
+  - docker push psicorpgmbh/multi-server
+  - docker push psicorpgmbh/multi-worker
 
