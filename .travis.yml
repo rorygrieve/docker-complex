@@ -14,7 +14,7 @@ after_success:
   - docker build -t psicorpgmbh/multi-server ./server
   - docker build -t psicorpgmbh/multi-worker ./worker
   # Log into the docker hub CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --passwrod-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take those images and push them to the docker hub
   - docker push psicorpgmbh/multi-client
   - docker push psicorpgmbh/multi-nginx
