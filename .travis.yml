@@ -3,7 +3,7 @@ servies:
   - docker
 
 before_install:
-  - docker build -t psicorpgmbh/react-test -f ./client/Dockerfile.dev
+  - docker build -t psicorpgmbh/react-test -f ./client/Dockerfile.dev ./client
 
 script:
   - docker run psicorpgmbh/react-test npm test -- --coverage
